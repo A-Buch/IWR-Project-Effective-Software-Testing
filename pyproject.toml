@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "attrici"
+## name = "iwr_project_attrici"
+version = "0.0.1"
+description = "CI and automated testing integration for attrici, IWR project"
+authors = ["Anna Buch <a.buch@stud.uni-heidelberg.de>"]
+readme = "README.md"
+### packages = [{include = "iwr_project_attrici"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10.11,<3.13"
+pandas = ">=2.0.1"
+netcdf4 = ">=1.6.3"
+matplotlib = ">=3.7.2"
+arviz = ">=0.16.1"
+func-timeout = ">=4.3.5"
+pip = ">=23.3.2"
+tables = ">=3.9.2"
+xarray = ">=2023.12.0"
+pre-commit = ">=3.7.0"
+pytest-datafiles = ">=3.0.0"
+numpy = ">=1.26.4"
+pymc = "^5.14.0"
+parameterized = "^0.9.0"
+
+[tool.poetry.dev-dependencies]
+black = ">=23.3.0"
+pytest = ">=7.2.2"
+pytest-cov = ">=4.0.0"
+ruff = ">=0.0.275"
+
+[tool.black]
+line-length = 150
+#exclude = ["versioneer.py", "visual_check.py"]
+## exclude = "\.pyi?$" #extend-exclude = '''.*test_.*'''
+
+[tool.ruff]
+lint.select = [
+    "E",    # pycodestyle Error
+    "F",    # Pyflakes
+    "I",    # isort
+    "Q",    # flake8-quotes
+    "W",    # pycodestyle Warning
+    "C90",  # mccabe
+]
+fix = true
+lint.ignore = ["C901", "E714", "I001"]
+exclude = [".venv", ".ipynb", "versioneer.py"]
+line-length = 150  # Same as Black
+
+[tool.ruff.lint.per-file-ignores]
+"attrici/sanity_check/visual_check.py" = ["E501"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
