@@ -1,0 +1,43 @@
+# configuration files
+joblib_memmap/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+doc/
+.readthedocs
+effective_software_testing.code-workspace
+
+# outdated project template files
+COPYING.md
+FILESTRUCTURE.md
+LICENSE.md
+
+# backup, logs, runscript folders and notebooks
+notebooks/
+*.ipynb
+!jupyter_notebooks/*.ipynb
+log/
+backup/
+myrunscripts/
+
+# outdated example
+examples/tas_example.ipynb
+
+# exclude data files and folders except for the test data
+output/
+input/
+meteo_data/
+*.nc*
+gswp3
+!tests/test_data/input/
+!tests/test_data/output/
+!tests/test_data/*put/**/*.nc*
+
+# shell scripts for running attrici software on HPC
+submit.sh
+submit_array.sh
+submit_cfact.sh
