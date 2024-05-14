@@ -36,8 +36,6 @@
 
 
 # Usage of ATTRICI
-
-[!NOTE]\
 **Needs update**
 
 ## ATTRICI - counterfactual climate for impact attribution

@@ -24,8 +24,10 @@ log/
 backup/
 myrunscripts/
 
-# outdated example
+# outdated example and setup files
 examples/tas_example.ipynb
+setup.cfg
+setup.py
 
 # exclude data files and folders except for the test data
 output/
