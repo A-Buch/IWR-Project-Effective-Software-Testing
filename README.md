@@ -7,6 +7,7 @@
 * Pre-commit hooks
 * Continuous Integration (CI)
     * Automated testing with Github Actions
+* Examples of software testing with pytest and unittest
 
 
 ## Environment and dependency management using poetry
@@ -21,7 +22,7 @@
 
 
 ## Continuous Integration (CI) with Github Actions
-[.github/workflows]
+[.github/workflows/]
 * Added tests for some classes as an example [tests/test_demo.py]
 * Set up workflows ..
     * for running on different python versions and load environments via poetry or pip [requirements.txt]
@@ -29,6 +30,11 @@
     * for pre-commits incl. autofixes
     * for dependabot incl. auto-merge of PRs
 
+## Examples of software testing with pytest and unittest
+[tests/]
+* currently examples of unit tests are implemented with some fixtures
+* tests are automatically run as part of the CI workflow
+* in future: integration tests and unit tests incl. mocking will be added
 
 
 --------------------------------------------------------------------------------------------------------------
@@ -36,6 +42,8 @@
 
 
 # Usage of ATTRICI
+
+[!NOTE]\
 **Needs update**
 
 ## ATTRICI - counterfactual climate for impact attribution

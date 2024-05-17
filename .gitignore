@@ -18,8 +18,8 @@ LICENSE.md
 
 # backup, logs, runscript folders and notebooks
 notebooks/
+jupyter_notebooks/
 *.ipynb
-!jupyter_notebooks/*.ipynb
 log/
 backup/
 myrunscripts/
