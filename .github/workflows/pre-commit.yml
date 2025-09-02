@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - uses: pre-commit/action@v3.0.1
       - name: Setup pre-commit
         # Don't need "pre-commit install --install-hooks" since we're just interested in running the hooks.
