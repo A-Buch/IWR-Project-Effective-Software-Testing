@@ -28,7 +28,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }} with pip
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
         cache: 'pip' # caching pip dependencies
@@ -48,7 +48,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install Python packages with poetry, set up development env from pyproject.toml and poetry.lock
